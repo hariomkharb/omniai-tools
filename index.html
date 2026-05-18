@@ -2,17 +2,17 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>NexGen AI Agency | AI Tool Hub</title>
+    <title>OmniAI Tools | All-in-One AI Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1 align="center">NexGen AI Agency</h1>
+        <h1 align="center">OmniAI Tools</h1>
         <p align="center">भविष्य का AI, आपकी उंगलियों पर</p>
 
         <nav class="navbar">
-            <div class="logo">NexGen AI Agency</div>
+            <div class="logo">OmniAI Tools</div>
             <div class="nav-links">
                 <a href="index.html">HOME</a>
                 <a href="contact.html">CONTACT</a>
@@ -24,6 +24,7 @@
     <input type="text" id="searchInput" onkeyup="filterTools()" placeholder="किसी भी AI टूल को यहाँ सर्च करें...">
 
     <div class="container" id="toolContainer">
+        
         <div class="card" data-name="ChatGPT">
             <div class="card-info">
                 <img src="images/chatgtp.png" alt="ChatGPT">
@@ -46,6 +47,46 @@
                 <div><h3>Gemini</h3><p>गूगल का स्मार्ट AI</p></div>
             </div>
             <a href="https://gemini.google.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+        </div>
+
+        <div class="card" data-name="Copy.ai">
+            <div class="card-info">
+                <img src="images/copyai.png" alt="Copy.ai" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
+                <div><h3>Copy.ai</h3><p>AI Copywriting & Marketing</p></div>
+            </div>
+            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+        </div>
+
+        <div class="card" data-name="Writesonic">
+            <div class="card-info">
+                <img src="images/writesonic.png" alt="Writesonic" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
+                <div><h3>Writesonic</h3><p>ChatGPT-style Content Creator</p></div>
+            </div>
+            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+        </div>
+
+        <div class="card" data-name="Jasper AI">
+            <div class="card-info">
+                <img src="images/jasper.png" alt="Jasper AI" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
+                <div><h3>Jasper AI</h3><p>Advanced Content & Writing</p></div>
+            </div>
+            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+        </div>
+
+        <div class="card" data-name="Pictory">
+            <div class="card-info">
+                <img src="images/pictory.png" alt="Pictory" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
+                <div><h3>Pictory</h3><p>Automatic Script to Video</p></div>
+            </div>
+            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+        </div>
+
+        <div class="card" data-name="Canva">
+            <div class="card-info">
+                <img src="images/canva.png" alt="Canva" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
+                <div><h3>Canva AI</h3><p>Graphics & AI Design Tools</p></div>
+            </div>
+            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
 
         <div class="card" data-name="Midjourney">
@@ -95,6 +136,7 @@
             </div>
             <a href="https://chat.olakrutrim.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
+
     </div>
 
     <div id="noResults" style="display:none; color:white; text-align:center; margin-top:20px;">
@@ -137,14 +179,15 @@
     </div>
 
     <div id="loginModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2>Login to NexGen</h2>
-        <input type="text" id="loginEmail" placeholder="Email"><br>
-        <input type="password" id="loginPassword" placeholder="Password"><br>
-        <button class="submit-btn" onclick="submitLogin()">Submit</button>
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Login to OmniAI</h2>
+            <input type="text" id="loginEmail" placeholder="Email"><br>
+            <input type="password" id="loginPassword" placeholder="Password"><br>
+            <button class="submit-btn" onclick="submitLogin()">Submit</button>
+        </div>
     </div>
-</div>
+
     <script src="script.js"></script>
 </body>
 </html>
