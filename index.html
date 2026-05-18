@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>OmniAI Tools | All-in-One AI Hub</title>
@@ -9,26 +9,26 @@
 
     <header>
         <h1 align="center">OmniAI Tools</h1>
-        <p align="center">भविष्य का AI, आपकी उंगलियों पर</p>
+        <p align="center">Future of AI, At Your Fingertips</p>
 
         <nav class="navbar">
             <div class="logo">OmniAI Tools</div>
             <div class="nav-links">
                 <a href="index.html">HOME</a>
-                <a href="contact.html">CONTACT</a>
+                <a href="#" onclick="openContactModal()">CONTACT</a>
                 <button class="btn-auth" onclick="openModal()">SIGN IN</button>
             </div>
         </nav>
     </header>
 
-    <input type="text" id="searchInput" onkeyup="filterTools()" placeholder="किसी भी AI टूल को यहाँ सर्च करें...">
+    <input type="text" id="searchInput" onkeyup="filterTools()" placeholder="Search any AI tool here...">
 
     <div class="container" id="toolContainer">
         
         <div class="card" data-name="ChatGPT">
             <div class="card-info">
                 <img src="images/chatgtp.png" alt="ChatGPT">
-                <div><h3>ChatGPT</h3><p>टेक्स्ट और कोडिंग के लिए</p></div>
+                <div><h3>ChatGPT</h3><p>Advanced Text & Coding AI</p></div>
             </div>
             <a href="https://chatgpt.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -36,7 +36,7 @@
         <div class="card" data-name="Claude">
             <div class="card-info">
                 <img src="images/c.jpg" alt="Claude">
-                <div><h3>Claude</h3><p>एडवांस्ड राइटिंग के लिए</p></div>
+                <div><h3>Claude</h3><p>Next-Gen Writing & Analysis</p></div>
             </div>
             <a href="https://claude.ai/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -44,7 +44,7 @@
         <div class="card" data-name="Gemini">
             <div class="card-info">
                 <img src="images/gemin.png" alt="Gemini">
-                <div><h3>Gemini</h3><p>गूगल का स्मार्ट AI</p></div>
+                <div><h3>Gemini</h3><p>Google's Smart Multimodal AI</p></div>
             </div>
             <a href="https://gemini.google.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -54,7 +54,7 @@
                 <img src="images/copyai.png" alt="Copy.ai" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
                 <div><h3>Copy.ai</h3><p>AI Copywriting & Marketing</p></div>
             </div>
-            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+            <a href="https://www.copy.ai/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
 
         <div class="card" data-name="Writesonic">
@@ -62,7 +62,7 @@
                 <img src="images/writesonic.png" alt="Writesonic" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
                 <div><h3>Writesonic</h3><p>ChatGPT-style Content Creator</p></div>
             </div>
-            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+            <a href="https://writesonic.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
 
         <div class="card" data-name="Jasper AI">
@@ -70,7 +70,7 @@
                 <img src="images/jasper.png" alt="Jasper AI" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
                 <div><h3>Jasper AI</h3><p>Advanced Content & Writing</p></div>
             </div>
-            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+            <a href="https://www.jasper.ai/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
 
         <div class="card" data-name="Pictory">
@@ -78,7 +78,7 @@
                 <img src="images/pictory.png" alt="Pictory" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
                 <div><h3>Pictory</h3><p>Automatic Script to Video</p></div>
             </div>
-            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+            <a href="https://pictory.ai/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
 
         <div class="card" data-name="Canva">
@@ -86,13 +86,13 @@
                 <img src="images/canva.png" alt="Canva" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2103/2103633.png'">
                 <div><h3>Canva AI</h3><p>Graphics & AI Design Tools</p></div>
             </div>
-            <a href="#" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
+            <a href="https://www.canva.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
 
         <div class="card" data-name="Midjourney">
             <div class="card-info">
                 <img src="images/download.jpg" alt="Midjourney">
-                <div><h3>Midjourney</h3><p>बेहतरीन इमेजेज के लिए</p></div>
+                <div><h3>Midjourney</h3><p>High-Quality Art Generation</p></div>
             </div>
             <a href="https://www.midjourney.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -100,7 +100,7 @@
         <div class="card" data-name="Dalle">
             <div class="card-info">
                 <img src="images/download2.png" alt="DALL-E">
-                <div><h3>DALL-E 3</h3><p>इमेज जनरेशन टूल</p></div>
+                <div><h3>DALL-E 3</h3><p>Realistic Image Creator</p></div>
             </div>
             <a href="https://openai.com/dall-e-3" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -108,7 +108,7 @@
         <div class="card" data-name="Firefly">
             <div class="card-info">
                 <img src="images/d.png" alt="Firefly">
-                <div><h3>Adobe Firefly</h3><p>क्रिएटिव डिज़ाइन के लिए</p></div>
+                <div><h3>Adobe Firefly</h3><p>Creative Design & Vectors</p></div>
             </div>
             <a href="https://firefly.adobe.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -116,7 +116,7 @@
         <div class="card" data-name="Perplexity">
             <div class="card-info">
                 <img src="images/p.png" alt="Perplexity">
-                <div><h3>Perplexity</h3><p>सटीक रिसर्च के लिए</p></div>
+                <div><h3>Perplexity</h3><p>Smart Conversational Search</p></div>
             </div>
             <a href="https://www.perplexity.ai/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -124,7 +124,7 @@
         <div class="card" data-name="Consensus">
             <div class="card-info">
                 <img src="images/download.png" alt="Consensus">
-                <div><h3>Consensus</h3><p>रिसर्च पेपर सर्च इंजन</p></div>
+                <div><h3>Consensus</h3><p>AI Research Paper Engine</p></div>
             </div>
             <a href="https://consensus.app/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -132,7 +132,7 @@
         <div class="card" data-name="Krutrim">
             <div class="card-info">
                 <img src="images/download (1).jpg" alt="Krutrim">
-                <div><h3>Krutrim</h3><p>भारत का अपना AI</p></div>
+                <div><h3>Krutrim</h3><p>India's Native Language AI</p></div>
             </div>
             <a href="https://chat.olakrutrim.com/" target="_blank"><button onclick="showLoading(this)">Visit</button></a>
         </div>
@@ -140,42 +140,7 @@
     </div>
 
     <div id="noResults" style="display:none; color:white; text-align:center; margin-top:20px;">
-        <h3>Oops! यह टूल अभी हमारी लिस्ट में नहीं है।</h3>
-    </div>
-
-    <hr style="border: 0.5px solid #1b263b; margin: 50px 0;">
-
-    <h2 align="center" style="color: #00d4ff;">Our Professional AI Services</h2>
-    <div class="container" id="serviceContainer">
-        <div class="card">
-            <div class="card-info">
-                <div>
-                    <h3>AI Web Solutions</h3>
-                    <p>High-end AI Integrated Websites.</p>
-                </div>
-            </div>
-            <a href="contact.html"><button>Book Now</button></a>
-        </div>
-
-        <div class="card">
-            <div class="card-info">
-                <div>
-                    <h3>Custom Chatbots</h3>
-                    <p>Smart AI bots for your business.</p>
-                </div>
-            </div>
-            <a href="contact.html"><button>Book Now</button></a>
-        </div>
-
-        <div class="card">
-            <div class="card-info">
-                <div>
-                    <h3>Automation</h3>
-                    <p>Automate tasks with Python & AI.</p>
-                </div>
-            </div>
-            <a href="contact.html"><button>Book Now</button></a>
-        </div>
+        <h3>Oops! This tool is not in our list yet.</h3>
     </div>
 
     <div id="loginModal" class="modal">
@@ -187,6 +152,38 @@
             <button class="submit-btn" onclick="submitLogin()">Submit</button>
         </div>
     </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <input type="text" id="contactName" placeholder="Your Name" required><br>
+            <input type="email" id="contactEmail" placeholder="Your Email Address" required><br>
+            <textarea id="contactMessage" placeholder="Write your message here..." rows="4" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #1b263b; background: #0b132b; color: white;"></textarea><br>
+            <button class="submit-btn" onclick="submitContactForm()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function openContactModal() {
+            document.getElementById("contactModal").style.display = "block";
+        }
+
+        function closeContactModal() {
+            document.getElementById("contactModal").style.display = "none";
+        }
+
+        function submitContactForm() {
+            var name = document.getElementById("contactName").value;
+            var email = document.getElementById("contactEmail").value;
+            if(name === "" || email === "") {
+                alert("Please fill in your name and email.");
+                return;
+            }
+            alert("Thank you " + name + "! Your message has been sent successfully.");
+            closeContactModal();
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>
